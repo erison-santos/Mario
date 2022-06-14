@@ -37,6 +37,32 @@
     animation: clouds-animation 20s infinite linear;
 }
 
+.wallpaper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: wallpaper-animation 60s infinite linear;
+}
+
+.backg {
+    position: absolute;
+    width: 100%;
+}
+
+.coin {
+    position: absolute;
+    width: 50px; 
+    bottom: 180px; 
+    animation: pipe-animation 1.5s infinite linear; 
+}
+
+.placar{
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    margin: 20px 40px;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;
@@ -72,6 +98,16 @@
 @keyframes clouds-animation {
     from {
         right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes wallpaper-animation {
+    from {
+        right: -100%;
     }
 
     to {
